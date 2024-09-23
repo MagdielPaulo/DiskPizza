@@ -1,9 +1,8 @@
-## Landing Page - Pizzaria DiskPizzaCarv (Freela)
+## WebSite - Pizzaria DiskPizzaCarv (Freela)
 ## Em desenvolvimento
 
-**Descrição:**
-
-Landing page criada para a pizzaria DiskPizzaCarvalho com o objetivo de apresentar o cardápio, promoções e facilitar o contato com o cliente.
+**Meu Objetivo:**
+Desenvolver habilidades de desenvolvimento web, ao tentar criar um web site completo por etapas de uma pizzaria de um amigo, CANSEI DE VER AULAS agora é documentação e codar !!
 
 **Tecnologias Utilizadas:**
 
@@ -11,7 +10,7 @@ Landing page criada para a pizzaria DiskPizzaCarvalho com o objetivo de apresent
 * **CSS:** Estilização da página, utilizando a fonte Poppins do Google Fonts e ícones do Box Icons.
 * **JavaScript:** Interações dinâmicas na página, como menus, carrosséis e animações (se houver).
 * **Figma:** Criação do protótipo inicial e design da interface.
-* **Canvas:** (Se utilizado) Para criar elementos gráficos personalizados.
+* **Canvas:** Para criar elementos gráficos personalizados.
 * **VS Code:** Ambiente de desenvolvimento utilizado para a criação e edição do código.
 
 **Estrutura:**
