@@ -1,8 +1,8 @@
-## WebSite - Pizzaria DiskPizzaCarv (Freela)
+## WebSite - Pizzaria DiskPizza (Freela)
 ## Em desenvolvimento >> aguarde o processo
 
 **Meu Objetivo:**
-Desenvolver habilidades de desenvolvimento web, ao criar um web site completo por etapas de uma pizzaria de um amigo, CANSEI DE VER AULAS agora é documentação e codar !!
+Desenvolver habilidades de desenvolvimento web, ao criar um web site completo por etapas de uma pizzaria!
 
 **Tecnologias Utilizadas:**
 
