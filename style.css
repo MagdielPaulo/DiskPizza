@@ -29,6 +29,7 @@ body {
   width: 100%;
   background: var(--branco);
   transition: all 0.5s;
+  position: fixed;
 }
 
 .navigation .logo {
@@ -75,6 +76,73 @@ body {
 
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
-  backgorund: var(--orange);
-  color: #116544;
+  background: var(--orange);
+}
+.home {
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%; 
+}
+
+.home.text{
+  max-width: 37rem;
+}
+
+.home-text .text-h4{
+  font-size: 1.5rem;
+  color: var(--laranja);
+  margin-bottom:1rem;
+}
+
+.home-text .text-h1{
+  font-size: 4rem;
+  margin-bottom:1rem;
+  line-height: 4rem;
+}
+
+.home-text p{
+  margin-bottom: 4rem;
+}
+
+.home-btn{
+  padding: 15px 45px;
+  background: var(--laranja);
+  color: var(--branco);
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.home-btn:hover{
+  background: #c44307;
+}
+
+.home-img img{
+  width: 100%;
+}
+
+@media (max-width:785px){
+  .navigation{
+    padding: 18px 20px;
+  }
+  .menu{
+    display: block;
+  }
+  .nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--branco);
+    gap: -10px;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin: 16px 0;
+  }
 }
