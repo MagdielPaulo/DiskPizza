@@ -76,4 +76,5 @@ body {
 .menu .bar:nth-child(1),
 .menu .bar:nth-child(3){
   backgorund: var(--orange);
+  color: #116544;
 }
