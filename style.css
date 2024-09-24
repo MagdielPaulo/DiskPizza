@@ -151,7 +151,33 @@ body {
     gap: -10px;
     transition: 0.3s;
   }
+
+  .nav-menu.ativo {
+    right: 0;
+  }
+
   .nav-item{
     margin: 16px 0;
+  }
+
+  .home{
+    padding: 100% 2%;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    gap: 5rem;
+  }
+
+  .home .text-h4{
+    font-size: 15px;
+  }
+  .home .text-h1{
+    font-size: 2.5rem
+  }
+  .home p{
+    font-size: 13px;
+  }
+  .home-img{
+    width: 110%;
   }
 }
