@@ -71,7 +71,7 @@ body {
   border-radius: 3px;
   background: var(--verde);
   margin: 5px auto;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu .bar:nth-child(1),
@@ -140,6 +140,7 @@ body {
   .menu.ativo .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
   }
+
   .nav-menu{
     position: fixed;
     right: -100%;
@@ -151,7 +152,6 @@ body {
     gap: -10px;
     transition: 0.3s;
   }
-
   .nav-menu.ativo {
     right: 0;
   }
