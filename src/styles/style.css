@@ -38,8 +38,10 @@ body {
 
 .logo-img img {
   height: 250px; /* Ajuste conforme necessário */
-  width: 250px;
+  width: auto;
+  display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .navigation ul {
@@ -73,7 +75,7 @@ body {
 }
 
 .menu {
-  display: none;
+  display: block;
   cursor: pointer;
 }
 
@@ -135,12 +137,15 @@ body {
 }
 
 .home-btn {
+  display: inline-block;
   padding: 15px 45px;
   background: var(--laranja);
   color: var(--branco);
   border-radius: 10px;
   font-weight: 500;
   transition: all 0.5s;
+  margin: auto;
+  text-align: center;
 }
 
 .home-btn:hover {
@@ -197,6 +202,7 @@ body {
   .home {
     padding: 100% 2%;
     flex-direction: column;
+    max-width: 80%;
     text-align: center;
     gap: 5rem;
   }
@@ -213,8 +219,13 @@ body {
     font-size: 13px;
   }
 
-  .home-img {
-    width: 110%;
+  .logo-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .home-btn{
+    margin: 0 auto;
   }
 
 /* Estilos do Menu no Mobile */
@@ -245,11 +256,12 @@ body {
     right: -100%;
     top: 70px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     flex-direction: column;
     background: var(--branco);
     gap: 10px;
     transition: 0.3s;
+    z-index: 9999;
   }
 
   .nav-menu.ativo {
@@ -258,7 +270,7 @@ body {
 
   .nav-item {
     margin: 16px 0;
+    text-align: center-;
   }
 }
-
 }
