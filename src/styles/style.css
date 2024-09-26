@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@
 
 :root {
   --laranja: #ff6014;
-  --branco: #fff; /* Corrected typo: branco instead of white */
+  --branco: #fff;
   --verde: #116544;
 }
 
@@ -20,26 +21,25 @@ body {
   background: var(--branco);
 }
 
+/* Navigation Styling */
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 20px;
   box-shadow: 0 0.1rem 0.5rem #ccc;
   width: 100%;
+  height: 80px;
   background: var(--branco);
   transition: all 0.5s;
   position: fixed;
+  z-index: 10;
 }
 
-.navigation .logo {
-  color: var(--laranja);
-  font-size: 1.7rem; 
-  font-weight: 600;
-}
-
-.logo span {
-  color: var(--verde);
+.logo-img img {
+  height: 250px; /* Ajuste conforme necessário */
+  width: 250px;
+  max-width: 100%;
 }
 
 .navigation ul {
@@ -55,13 +55,26 @@ body {
   transition: all 0.5s;
 }
 
-.navigation ul li a:hover { 
+.navigation ul li a:hover {
   color: var(--laranja);
 }
 
-.menu {
+.btn-default {
+  background-color: var(--laranja);
+  color: white;
+  border: none;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-default:hover {
+  background-color: #ff3300;
+}
+
+.menu {
   display: none;
+  cursor: pointer;
 }
 
 .menu .bar {
@@ -75,39 +88,53 @@ body {
 }
 
 .menu .bar:nth-child(1),
-.menu .bar:nth-child(3){
-  background: var(--orange);
+.menu .bar:nth-child(3) {
+  background: var(--laranja);
 }
+
+.menu.ativo .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu.ativo .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.ativo .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Home Section */
 .home {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10%; 
+  padding: 0px 10%;
 }
 
-.home.text{
+.home-text {
   max-width: 37rem;
 }
 
-.home-text .text-h4{
+.home-text .text-h4 {
   font-size: 1.5rem;
   color: var(--laranja);
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
-.home-text .text-h1{
+.home-text .text-h1 {
   font-size: 4rem;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
   line-height: 4rem;
 }
 
-.home-text p{
+.home-text p {
   margin-bottom: 4rem;
 }
 
-.home-btn{
+.home-btn {
   padding: 15px 45px;
   background: var(--laranja);
   color: var(--branco);
@@ -116,32 +143,39 @@ body {
   transition: all 0.5s;
 }
 
-.home-btn:hover{
+.home-btn:hover {
   background: #c44307;
 }
 
-.home-img img{
+.pizza-img img {
   width: 100%;
 }
 
-@media (max-width:785px){
-  .navigation{
+/* Media Queries */
+@media (max-width: 785px) {
+  .navigation {
     padding: 18px 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .menu{
+
+  .menu {
     display: block;
   }
-  .menu.ativo .bar:nth-child(1){
+
+  .menu.ativo .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  .menu.ativo .bar:nth-child(2){
+
+  .menu.ativo .bar:nth-child(2) {
     opacity: 0;
   }
-  .menu.ativo .bar:nth-child(3){
+
+  .menu.ativo .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-menu{
+  .nav-menu {
     position: fixed;
     right: -100%;
     top: 70px;
@@ -149,35 +183,82 @@ body {
     height: 100%;
     flex-direction: column;
     background: var(--branco);
-    gap: -10px;
     transition: 0.3s;
   }
+
   .nav-menu.ativo {
     right: 0;
   }
 
-  .nav-item{
+  .nav-item {
     margin: 16px 0;
   }
 
-  .home{
+  .home {
     padding: 100% 2%;
     flex-direction: column;
     text-align: center;
-    overflow: hidden;
     gap: 5rem;
   }
 
-  .home .text-h4{
+  .home-text .text-h4 {
     font-size: 15px;
   }
-  .home .text-h1{
-    font-size: 2.5rem
+
+  .home-text .text-h1 {
+    font-size: 2.5rem;
   }
-  .home p{
+
+  .home-text p {
     font-size: 13px;
   }
-  .home-img{
+
+  .home-img {
     width: 110%;
   }
+
+/* Estilos do Menu no Mobile */
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu.ativo .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu.ativo .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu.ativo .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 785px) {
+  .menu {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--branco);
+    gap: 10px;
+    transition: 0.3s;
+  }
+
+  .nav-menu.ativo {
+    right: 0;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+}
+
 }
