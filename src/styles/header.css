@@ -3,3 +3,46 @@ header {
     padding: 28px 8%;
 }
 
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo{
+    max-width: 20%;
+    height: auto;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color:#1d1d1dad;
+    border-bottom: 3px solid #e86d3a;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1170) {
+    #mobile_btn{
+        display: block;
+    }  
+}
