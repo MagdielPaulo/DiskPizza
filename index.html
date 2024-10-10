@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/styles1.css">
     <link rel="stylesheet" href="src/styles/header.css">
-    <title>DiskPizza</title>
+    <title>Lazarento</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <img src="src/images/logo.png" alt="logo" id="nav_logo">
+            <i class="fa-solid fa-burger" id="nav_logo"> Food</i>
             
             <ul id="nav_list">
-                <li class="nav-item active"><a href="#home">Início</a></li>
-                <li class="nav-item"><a href="#sobre">Sobre</a></li>
-                <li class="nav-item"><a href="#menu">Menu</a></li>
-                <li class="nav-item"><a href="#feedbacks">Avaliações</a></li>
-                <li class="nav-item"><a href="#contato">Contatos</a></li>
-                <li class="nav-item"><a href="#localizacao">Localização</a></li>
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedbacks">Avaliações</a>
+                </li>
             </ul>
 
             <button class="btn-default">
                 Peça aqui
             </button>
 
-            <button id="mobile-btn">
+            <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
 
-        <div id="mobile-menu">
+        <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item"><a href="#home">Início</a></li>
-                <li class="nav-item"><a href="#sobre">Sobre</a></li>
-                <li class="nav-item"><a href="#menu">Menu</a></li>
-                <li class="nav-item"><a href="#feedbacks">Avaliações</a></li>
-                <li class="nav-item"><a href="#contato">Contatos</a></li>
-                <li class="nav-item"><a href="#localizacao">Localização</a></li>
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#feedbacks">Avaliações</a>
+                </li>
             </ul>
 
             <button class="btn-default">
@@ -48,19 +55,7 @@
             </button>
         </div>
     </header>
-    <main>
-        <section class="home">
-            <div class="home-text">
-                <h4 class="text-h4">Bem-vindo à DiskPizza</h4>
-                <h1 class="text-h1">Vendemos Qualidade!!</h1>
-                <p>Qualidade que você sente em cada pedaço. #DiskPizza</p>
-                <a href="#" class="home-btn">Saiba mais.</a>
-            </div>
-            <div class="pizza-img">
-                <img src="src/images/pizza1.png" alt="pizza">
-            </div>
-        </section>
-    </main>
-    <script src="src/scripts/script.js"></script>
+    <script src="\src\javascript/script.js"></script>
 </body>
+
 </html>

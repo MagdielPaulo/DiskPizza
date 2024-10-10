@@ -10,9 +10,9 @@ header {
     justify-content: space-between;
 }
 
-#nav_logo{
-    max-width: 20%;
-    height: auto;
+#nav_logo {
+    font-size: 24px;
+    color: #e86d3a;
 }
 
 #nav_list {
@@ -41,8 +41,24 @@ header {
 }
 
 /* RESPONSIVIDADE */
-@media screen and (max-width: 1170) {
-    #mobile_btn{
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default{
+        display: none;
+    }
+
+    #mobile_btn {
         display: block;
-    }  
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
